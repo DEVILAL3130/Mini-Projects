@@ -35,11 +35,11 @@ setInterval(() => {
 tempLoad();
 
 const calculateTemp = () => {
-    const numberTemp = document.getElementById('temp').value;
+    const numberTemp = parseFloat(document.getElementById('temp').value);
     // console.log(numberTemp);
 
     const tempSelected = document.querySelector('#temp_diff');
-    const valeTemp = temp_diff.options[tempSelected.selectedIndex].value;
+    const valeTemp = tempSelected.options[tempSelected.selectedIndex].value;
     // console.log(valeTemp);
 
 
